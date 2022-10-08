@@ -276,7 +276,13 @@ See [Prerendering](/docs/page-options#prerender). An object containing zero or m
     		}
     	}
     };
-
+const config = {
+  // etc...
+  kit: {
+    // etc...
+    floc: process.env.NODE_ENV === "development",
+  },
+};
     export default config;
     ```
 
